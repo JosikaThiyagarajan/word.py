@@ -1,0 +1,33 @@
+
+print("<<PROGRAM TO CONVERT GIVEN DIGIT INTO WORDS>>")
+n=int(input("Enter any number :"))
+rev=0
+temp=n
+while n>0:
+        r=n%10
+        rev=rev*10+r
+        n=n//10
+print("---result---")
+while rev>0:
+        s=rev%10
+        if s==1:
+                print ("One",end=" ")
+        elif s==2:
+                print ("Two",end=" ")
+        elif s==3:
+                print ("Three",end=" ")
+        elif s==4:
+                print ("Four",end=" ")
+        elif s==5:
+                print ("Five",end=" ")
+        elif s==6:
+                print ("Six",end=" ")
+        elif s==7:
+                print ("Seven",end=" ")
+        elif s==8:
+                print ("Eight",end=" ")
+        elif s==9:
+                print ("Nine",end=" ")
+        else:
+                print ("Zero",end=" ")
+        rev=rev//10
